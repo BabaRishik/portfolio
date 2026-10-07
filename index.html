@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thallada Baba Rishik - ECE Engineering Student & Aspiring VLSI Engineer. Portfolio showcasing education, programming in C & Python, Smart India Hackathon Chill Can project, and drone engineering.">
+  <meta name="author" content="Thallada Baba Rishik">
+  <title>Thallada Baba Rishik | ECE Student & Aspiring VLSI Engineer</title>
+  
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Silicon Grid / Circuit Canvas -->
+  <canvas id="circuitCanvas" aria-hidden="true"></canvas>
+
+  <!-- Sticky Technical Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Thallada Baba Rishik Homepage">
+        <span class="chip-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <rect x="9" y="9" width="6" height="6" />
+            <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3" />
+          </svg>
+        </span>
+        <div class="brand-text">
+          <span class="brand-name">T. BABA RISHIK</span>
+          <span class="brand-tag">ECE • VLSI ASPIRANT</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://in.linkedin.com/in/babarishik-thallada-637682370" target="_blank" rel="noopener noreferrer" class="nav-btn-linkedin" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="terminal-badge reveal-fade">
+            <span class="pulse-dot"></span>
+            <span class="badge-text">STATUS: ECE STUDENT // OPEN TO INTERNSHIPS</span>
+          </div>
+
+          <h1 class="hero-title reveal-fade">
+            Thallada Baba Rishik
+          </h1>
+
+          <p class="hero-subtitle reveal-fade">
+            ECE Engineering Student <span class="divider-slash">|</span> Aspiring VLSI Engineer
+          </p>
+
+          <p class="hero-description reveal-fade">
+            Exploring VLSI, semiconductor technology, embedded systems and programming.
+          </p>
+
+          <div class="hero-objective-card reveal-fade">
+            <div class="objective-header">
+              <span class="terminal-prompt">$</span>
+              <span class="objective-label">CAREER OBJECTIVE</span>
+            </div>
+            <p class="objective-text">
+              &ldquo;As an ECE Engineering student interested in VLSI, semiconductor, and embedded technology, seeking an internship to apply my programming skills and electronic knowledge and increase my skills in VLSI design.&rdquo;
+            </p>
+          </div>
+
+          <div class="hero-cta-group reveal-fade">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+            </a>
+
+            <a href="https://in.linkedin.com/in/babarishik-thallada-637682370" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Microchip Telemetry Indicators -->
+          <div class="hero-telemetry reveal-fade">
+            <div class="telemetry-item">
+              <span class="telemetry-key">LOCATION</span>
+              <span class="telemetry-val">Khammam, India</span>
+            </div>
+            <div class="telemetry-separator">/</div>
+            <div class="telemetry-item">
+              <span class="telemetry-key">DOMAIN</span>
+              <span class="telemetry-val">ECE &bull; Hardware / Firmware Foundations</span>
+            </div>
+            <div class="telemetry-separator">/</div>
+            <div class="telemetry-item">
+              <span class="telemetry-key">TARGET</span>
+              <span class="telemetry-val">VLSI &bull; Embedded Systems Internship</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Schematic Illustration Graphic -->
+        <div class="hero-visual reveal-fade" aria-hidden="true">
+          <div class="ic-die-wrapper">
+            <div class="ic-pin pin-top p1"></div>
+            <div class="ic-pin pin-top p2"></div>
+            <div class="ic-pin pin-top p3"></div>
+            <div class="ic-pin pin-top p4"></div>
+            <div class="ic-pin pin-bottom p1"></div>
+            <div class="ic-pin pin-bottom p2"></div>
+            <div class="ic-pin pin-bottom p3"></div>
+            <div class="ic-pin pin-bottom p4"></div>
+            <div class="ic-pin pin-left p1"></div>
+            <div class="ic-pin pin-left p2"></div>
+            <div class="ic-pin pin-left p3"></div>
+            <div class="ic-pin pin-left p4"></div>
+            <div class="ic-pin pin-right p1"></div>
+            <div class="ic-pin pin-right p2"></div>
+            <div class="ic-pin pin-right p3"></div>
+            <div class="ic-pin pin-right p4"></div>
+
+            <div class="ic-die">
+              <div class="die-header">
+                <span class="die-brand">VLSI CORE</span>
+                <span class="die-notch"></span>
+              </div>
+              
+              <div class="die-circuit-grid">
+                <div class="circuit-trace t-top-left"></div>
+                <div class="circuit-trace t-top-right"></div>
+                <div class="circuit-trace t-center"></div>
+                <div class="circuit-trace t-bot-left"></div>
+                <div class="circuit-trace t-bot-right"></div>
+                
+                <div class="die-logic-core">
+                  <div class="core-glyph">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                      <polyline points="2 17 12 22 22 17" />
+                      <polyline points="2 12 12 17 22 12" />
+                    </svg>
+                  </div>
+                  <span class="core-label">ECE</span>
+                  <span class="core-sub">FOUNDATION</span>
+                </div>
+              </div>
+
+              <div class="die-footer">
+                <span class="die-code">C_LANG // PYTHON</span>
+                <span class="die-status">ACTIVE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT ME ==================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <div class="section-tag">
+            <span class="tag-bracket">[</span> SECTION 01 <span class="tag-bracket">]</span>
+          </div>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card primary-about-card reveal-fade">
+            <div class="card-chip-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+              <span>PROFILE OVERVIEW</span>
+            </div>
+            
+            <h3 class="about-headline">
+              Engineering Student Driven by Hardware, Semiconductor Logic &amp; Embedded Systems
+            </h3>
+            
+            <p class="about-paragraph">
+              I am an Electronics and Communication Engineering (ECE) student passionate about understanding how modern electronic systems operate from fundamental silicon logic to programmatic control. My primary academic interest lies in <strong>VLSI, semiconductor technology, and embedded systems</strong>.
+            </p>
+
+            <p class="about-paragraph">
+              Currently, I am strengthening my programming proficiency in <strong>C and Python</strong> alongside my foundational electronic concepts. I focus on developing clean, structured computational thinking that can be directly applied to hardware architecture, algorithmic problem solving, and low-level system design.
+            </p>
+
+            <p class="about-paragraph highlight-box">
+              I am actively seeking an internship opportunity where I can apply my programming skills and electronic knowledge in a real-world setting, contribute enthusiastically to engineering teams, and expand my technical capabilities in VLSI design and semiconductor technologies.
+            </p>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="about-spec-card reveal-fade">
+              <h4 class="spec-card-title">Quick Specifications</h4>
+              <ul class="spec-list">
+                <li>
+                  <span class="spec-name">Academic Discipline</span>
+                  <span class="spec-value highlight">Electronics &amp; Communication (ECE)</span>
+                </li>
+                <li>
+                  <span class="spec-name">Focus Areas</span>
+                  <span class="spec-value">VLSI &bull; Semiconductors &bull; Embedded</span>
+                </li>
+                <li>
+                  <span class="spec-name">Core Programming</span>
+                  <span class="spec-value code-font">C &bull; Python</span>
+                </li>
+                <li>
+                  <span class="spec-name">Current Base</span>
+                  <span class="spec-value">Khammam, India</span>
+                </li>
+                <li>
+                  <span class="spec-name">Opportunity Sought</span>
+                  <span class="spec-value status-badge">Internship in VLSI / Electronics</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Engineering Philosophy Card -->
+            <div class="about-spec-card philosophy-card reveal-fade">
+              <div class="card-icon-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="20" height="20" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+                <h4>Engineering Mindset</h4>
+              </div>
+              <p class="philosophy-text">
+                Committed to foundational rigor. I believe breakthrough hardware innovation starts with a solid grasp of core electronics, disciplined code architecture, and a persistent drive to solve tangible real-world problems.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 3. EDUCATION ==================== -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <div class="section-tag">
+            <span class="tag-bracket">[</span> SECTION 02 <span class="tag-bracket">]</span>
+          </div>
+          <h2 class="section-title">Academic Background</h2>
+          <div class="section-divider"></div>
+          <p class="section-intro">
+            A track record of strong academic consistency and discipline, laying the mathematical and scientific foundation for engineering.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          
+          <!-- Intermediate Card -->
+          <div class="edu-card reveal-fade">
+            <div class="edu-badge-row">
+              <span class="edu-year-badge">Graduation Year: 2025</span>
+              <span class="edu-type-pill">Higher Secondary / 10+2</span>
+            </div>
+
+            <div class="edu-main-info">
+              <h3 class="edu-degree">Intermediate</h3>
+              <div class="edu-institution">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+                <span>SR JR College</span>
+              </div>
+            </div>
+
+            <div class="edu-score-container">
+              <div class="score-metric">
+                <span class="score-number">938</span>
+                <span class="score-label">Marks Scored</span>
+              </div>
+              <div class="score-annotation">
+                <span class="metric-icon">&#10003;</span>
+                <span>Strong foundation in Mathematics, Physics, and Chemistry preparing for electronics engineering.</span>
+              </div>
+            </div>
+
+            <div class="edu-footer-meta">
+              <span class="meta-dot"></span>
+              <span>Rigorous science curriculum completed in 2025</span>
+            </div>
+          </div>
+
+          <!-- SSC Card -->
+          <div class="edu-card reveal-fade">
+            <div class="edu-badge-row">
+              <span class="edu-year-badge">Year of Completion: 2023</span>
+              <span class="edu-type-pill">Secondary Education / 10th</span>
+            </div>
+
+            <div class="edu-main-info">
+              <h3 class="edu-degree">SSC (Secondary School Certificate)</h3>
+              <div class="edu-institution">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+                <span>Surya High School</span>
+              </div>
+            </div>
+
+            <div class="edu-score-container">
+              <div class="score-metric">
+                <span class="score-number">9.7</span>
+                <span class="score-label">GPA / Grade Point Average</span>
+              </div>
+              <div class="score-annotation">
+                <span class="metric-icon">&#10003;</span>
+                <span>Excellence across foundational sciences, analytical reasoning, and quantitative coursework.</span>
+              </div>
+            </div>
+
+            <div class="edu-footer-meta">
+              <span class="meta-dot"></span>
+              <span>Graduated in 2023 with academic honors</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 4. SKILLS ==================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <div class="section-tag">
+            <span class="tag-bracket">[</span> SECTION 03 <span class="tag-bracket">]</span>
+          </div>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-divider"></div>
+          <p class="section-intro">
+            Core programming competencies connected directly to electronic engineering, hardware logic modeling, and system-level computation.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- C Skill Card -->
+          <div class="skill-card reveal-fade">
+            <div class="skill-header">
+              <div class="skill-icon-box c-icon">
+                <span class="code-symbol">&lt;C&gt;</span>
+              </div>
+              <div class="skill-identity">
+                <h3 class="skill-name">C Programming</h3>
+                <span class="skill-role-badge">System &amp; Embedded Foundations</span>
+              </div>
+            </div>
+
+            <p class="skill-description">
+              The foundational low-level programming language essential for embedded systems, microcontroller firmware, hardware register manipulation, and efficient memory management.
+            </p>
+
+            <div class="skill-connection">
+              <div class="connection-label">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="14" height="14" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+                <span>Relevance to ECE &amp; VLSI Direction:</span>
+              </div>
+              <ul class="connection-points">
+                <li>Direct memory control, pointers, and bitwise logic operations</li>
+                <li>Critical for understanding computer architecture and hardware registers</li>
+                <li>Forms the conceptual basis for low-level embedded firmware</li>
+              </ul>
+            </div>
+
+            <div class="skill-footer-tag">
+              <span class="tag-mono">CORE_LANGUAGE: C</span>
+              <span class="status-indicator">PRACTICED</span>
+            </div>
+          </div>
+
+          <!-- Python Skill Card -->
+          <div class="skill-card reveal-fade">
+            <div class="skill-header">
+              <div class="skill-icon-box py-icon">
+                <span class="code-symbol">.py</span>
+              </div>
+              <div class="skill-identity">
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-role-badge">Automation &amp; Algorithmic Scripting</span>
+              </div>
+            </div>
+
+            <p class="skill-description">
+              Versatile high-level programming used extensively in engineering workflows for data parsing, hardware test automation, algorithmic modeling, and rapid problem prototyping.
+            </p>
+
+            <div class="skill-connection">
+              <div class="connection-label">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="14" height="14" stroke-width="2">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+                <span>Relevance to ECE &amp; VLSI Direction:</span>
+              </div>
+              <ul class="connection-points">
+                <li>Rapid automation of computational tasks and engineering calculations</li>
+                <li>Standard industry scripting tool for hardware testing and verification workflows</li>
+                <li>Clean algorithmic thinking and modular program structure</li>
+              </ul>
+            </div>
+
+            <div class="skill-footer-tag">
+              <span class="tag-mono">CORE_LANGUAGE: PYTHON</span>
+              <span class="status-indicator">PRACTICED</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Career Bridge Banner -->
+        <div class="skills-bridge-banner reveal-fade">
+          <div class="bridge-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="22" height="22" stroke-width="2">
+              <rect x="4" y="4" width="16" height="16" rx="2"/>
+              <line x1="9" y1="9" x2="15" y2="15"/>
+              <line x1="15" y1="9" x2="9" y2="15"/>
+            </svg>
+          </div>
+          <div class="bridge-content">
+            <h4 class="bridge-title">Bridging Programming to Silicon &amp; Hardware</h4>
+            <p class="bridge-text">
+              By combining disciplined programming in <strong>C and Python</strong> with core Electronics and Communication principles, I am building the analytical foundation necessary to progress into advanced digital design and VLSI architectures.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5. PROJECTS & ACTIVITIES ==================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <div class="section-tag">
+            <span class="tag-bracket">[</span> SECTION 04 <span class="tag-bracket">]</span>
+          </div>
+          <h2 class="section-title">Projects &amp; Technical Activities</h2>
+          <div class="section-divider"></div>
+          <p class="section-intro">
+            Practical initiatives demonstrating hands-on engineering exploration, real-world problem solving, and national hackathon participation.
+          </p>
+        </div>
+
+        <div class="projects-container">
+          
+          <!-- PROJECT 2: SIH HACKATHON - CHILL CAN (FEATURED & VISUALLY STRONGER) -->
+          <article class="project-card featured-project-card reveal-fade">
+            <div class="featured-badge-ribbon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <span>NATIONAL LEVEL HACKATHON INNOVATION</span>
+            </div>
+
+            <div class="featured-project-grid">
+              
+              <div class="project-info-side">
+                <div class="event-meta-tag">
+                  <span class="meta-org">SMART INDIA HACKATHON (SIH)</span>
+                  <span class="meta-gov">Organized by Central Government</span>
+                </div>
+
+                <h3 class="project-title highlight-title">
+                  SIH Hackathon &mdash; &ldquo;Chill Can&rdquo;
+                </h3>
+
+                <p class="project-subtitle">
+                  Passive Thermal Storage Container to Prevent Milk Wastage Without Electricity
+                </p>
+
+                <div class="project-synopsis">
+                  <p>
+                    Participated in a hackathon conducted by <strong>SIH</strong>, organized by the <strong>Central Government</strong>. In remote rural areas, lack of electricity and delayed transportation cause critical milk wastage for local farmers and dairy producers.
+                  </p>
+                  <p>
+                    Our team formulated the <strong>&ldquo;Chill Can&rdquo;</strong> &mdash; an innovative storage container engineered to preserve milk freshness for extended hours completely without electricity by leveraging passive thermal storage.
+                  </p>
+                </div>
+
+                <div class="project-tech-pillars">
+                  <div class="tech-pillar-card">
+                    <div class="pillar-header">
+                      <span class="pillar-icon">&#9881;</span>
+                      <span class="pillar-label">COOLING MECHANISM</span>
+                    </div>
+                    <div class="pillar-val">PCM (Phase Change Material)</div>
+                    <p class="pillar-desc">
+                      Employs Phase Change Material to absorb thermal energy through latent heat, keeping the internal environment cool for hours without electrical power.
+                    </p>
+                  </div>
+
+                  <div class="tech-pillar-card">
+                    <div class="pillar-header">
+                      <span class="pillar-icon">&#128737;</span>
+                      <span class="pillar-label">CONTAINER MATERIAL</span>
+                    </div>
+                    <div class="pillar-val">HDPE (High-Density Polyethylene)</div>
+                    <p class="pillar-desc">
+                      Manufactured with High-Density Polyethylene, ensuring chemical safety and certified suitability for direct food-grade contact with milk.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="project-takeaway">
+                  <strong>Key Focus:</strong> Tackling energy poverty, rural logistics vulnerabilities, and sustainable refrigeration through passive material design.
+                </div>
+              </div>
+
+              <!-- Visual Diagram / Blueprint Architecture Side -->
+              <div class="project-visual-side">
+                <div class="can-schematic-card">
+                  <div class="schematic-header">
+                    <span class="schematic-id">SCHEMATIC ID: SIH-CHILL-CAN</span>
+                    <span class="schematic-rev">REV 1.0</span>
+                  </div>
+
+                  <div class="schematic-drawing">
+                    <svg viewBox="0 0 280 240" class="schematic-svg" fill="none" stroke="currentColor">
+                      <!-- Outer HDPE Shell -->
+                      <rect x="70" y="30" width="140" height="180" rx="20" stroke-width="2.5" stroke="#00e5ff" fill="rgba(0, 229, 255, 0.05)"/>
+                      <!-- Insulation Layer / PCM Chamber -->
+                      <rect x="85" y="45" width="110" height="150" rx="14" stroke-width="1.8" stroke="#38bdf8" stroke-dasharray="4 3" fill="rgba(56, 189, 248, 0.08)"/>
+                      <!-- Inner Food Grade Milk Chamber -->
+                      <rect x="100" y="60" width="80" height="120" rx="10" stroke-width="2" stroke="#e2e8f0" fill="rgba(255, 255, 255, 0.08)"/>
+                      
+                      <!-- Top Handle / Lid -->
+                      <path d="M110 30 V18 Q140 12 170 18 V30" stroke-width="2.2" stroke="#00e5ff" fill="none"/>
+                      
+                      <!-- Callout pointer 1: HDPE Shell -->
+                      <line x1="210" y1="50" x2="250" y2="40" stroke-width="1.2" stroke="#64748b"/>
+                      <circle cx="210" cy="50" r="3" fill="#00e5ff"/>
+                      <text x="215" y="35" fill="#38bdf8" font-size="10" font-family="'JetBrains Mono', monospace">HDPE Shell</text>
+                      
+                      <!-- Callout pointer 2: PCM Layer -->
+                      <line x1="195" y1="120" x2="245" y2="120" stroke-width="1.2" stroke="#64748b"/>
+                      <circle cx="195" cy="120" r="3" fill="#38bdf8"/>
+                      <text x="205" y="115" fill="#38bdf8" font-size="10" font-family="'JetBrains Mono', monospace">PCM Layer</text>
+
+                      <!-- Callout pointer 3: Safe Milk Core -->
+                      <line x1="70" y1="120" x2="25" y2="120" stroke-width="1.2" stroke="#64748b"/>
+                      <circle cx="100" cy="120" r="3" fill="#e2e8f0"/>
+                      <text x="15" y="115" fill="#e2e8f0" font-size="10" font-family="'JetBrains Mono', monospace">Milk Core</text>
+
+                      <!-- Thermal arrows representing passive cooling retention -->
+                      <path d="M125 150 Q140 160 155 150" stroke-width="1.5" stroke="#00e5ff" stroke-linecap="round"/>
+                      <path d="M125 130 Q140 140 155 130" stroke-width="1.5" stroke="#00e5ff" stroke-linecap="round"/>
+                      <path d="M125 110 Q140 120 155 110" stroke-width="1.5" stroke="#00e5ff" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+
+                  <div class="schematic-specs">
+                    <div class="spec-row">
+                      <span>Problem:</span>
+                      <strong>Rural Milk Wastage</strong>
+                    </div>
+                    <div class="spec-row">
+                      <span>Constraint:</span>
+                      <strong>Zero Electricity Dependency</strong>
+                    </div>
+                    <div class="spec-row">
+                      <span>Core Tech:</span>
+                      <strong>Phase Change Material (PCM)</strong>
+                    </div>
+                    <div class="spec-row">
+                      <span>Material:</span>
+                      <strong>HDPE (Milk Contact Safe)</strong>
+                    </div>
+                    <div class="spec-row">
+                      <span>Organization:</span>
+                      <strong>Smart India Hackathon (SIH)</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+
+          <!-- PROJECT 1: DRONE WORKSHOP -->
+          <article class="project-card standard-project-card reveal-fade">
+            <div class="card-top-bar">
+              <span class="card-category-badge">HANDS-ON WORKSHOP &bull; EMBEDDED DYNAMICS</span>
+              <span class="card-date-tag">TECHNICAL TRAINING</span>
+            </div>
+
+            <div class="standard-project-content">
+              <div class="proj-title-row">
+                <div class="proj-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="22" height="22" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="3" y1="12" x2="9" y2="12" />
+                    <line x1="15" y1="12" x2="21" y2="12" />
+                    <line x1="12" y1="3" x2="12" y2="9" />
+                    <line x1="12" y1="15" x2="12" y2="21" />
+                    <circle cx="3" cy="12" r="1.5" />
+                    <circle cx="21" cy="12" r="1.5" />
+                    <circle cx="12" cy="3" r="1.5" />
+                    <circle cx="12" cy="21" r="1.5" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="project-title">Drone Workshop</h3>
+                  <p class="project-subtitle">Practical Exploration of Drone Architecture, Embedded Coding &amp; Engineering</p>
+                </div>
+              </div>
+
+              <p class="project-text">
+                Participated in an intensive hands-on drone engineering workshop focused on understanding the comprehensive architecture of unmanned aerial vehicles (UAVs) &mdash; bridging hardware assemblies, motor controllers, electronic modules, and autonomous code execution.
+              </p>
+
+              <div class="workshop-modules-grid">
+                
+                <div class="module-item">
+                  <div class="module-num">01</div>
+                  <div class="module-body">
+                    <h4 class="module-title">Drone Components</h4>
+                    <p class="module-desc">
+                      Detailed study of parts required for drone assembly &mdash; airframe structure, brushless DC motors, ESCs (electronic speed controllers), flight controllers, propellers, sensors, and power distribution boards.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="module-item">
+                  <div class="module-num">02</div>
+                  <div class="module-body">
+                    <h4 class="module-title">Coding Involvement</h4>
+                    <p class="module-desc">
+                      Understood how code drives the system &mdash; telemetry protocols, PID stabilization loops, sensor calibration, and programmatic transmission between ground controller and drone receiver.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="module-item">
+                  <div class="module-num">03</div>
+                  <div class="module-body">
+                    <h4 class="module-title">Fields &amp; Applications</h4>
+                    <p class="module-desc">
+                      Explored real-world operational domains where drones are deployed &mdash; precision agriculture, aerial topography, industrial inspections, logistics, and emergency surveillance.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="module-item">
+                  <div class="module-num">04</div>
+                  <div class="module-body">
+                    <h4 class="module-title">Basic Drone Engineering</h4>
+                    <p class="module-desc">
+                      Fundamental aerodynamic principles, thrust-to-weight ratios, center of gravity balance, and safety protocols governing multi-rotor unmanned systems.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="project-tags">
+                <span class="p-tag">Hardware Assembly</span>
+                <span class="p-tag">Drone Components</span>
+                <span class="p-tag">Embedded Coding</span>
+                <span class="p-tag">Flight Dynamics</span>
+                <span class="p-tag">Industrial Applications</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 6. ACHIEVEMENTS ==================== -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <div class="section-tag">
+            <span class="tag-bracket">[</span> SECTION 05 <span class="tag-bracket">]</span>
+          </div>
+          <h2 class="section-title">Achievements &amp; Honors</h2>
+          <div class="section-divider"></div>
+          <p class="section-intro">
+            Official recognition earned through nationwide engineering competition and hackathon engagement.
+          </p>
+        </div>
+
+        <div class="achievement-container reveal-fade">
+          <div class="trophy-award-card">
+            
+            <div class="award-visual-col">
+              <div class="trophy-hexagon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="48" height="48" stroke-width="1.7">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                  <path d="M4 22h16"/>
+                  <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+                  <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+                </svg>
+              </div>
+              <div class="award-ribbon-text">NATIONAL EVENT</div>
+            </div>
+
+            <div class="award-details-col">
+              <div class="award-status-pill">VERIFIED ACHIEVEMENT</div>
+              <h3 class="award-title">SIH Hackathon Participation Certificate</h3>
+              <p class="award-organization">
+                Smart India Hackathon (SIH) &bull; Conducted by SIH &amp; Organized by the Central Government
+              </p>
+              <p class="award-description">
+                Awarded official certificate of participation in the prestigious Smart India Hackathon for conceptualizing, engineering, and presenting the <strong>&ldquo;Chill Can&rdquo;</strong> passive refrigeration solution to address rural milk spoilage without electricity.
+              </p>
+
+              <div class="award-meta-grid">
+                <div class="award-meta-item">
+                  <span class="meta-label">Competition</span>
+                  <span class="meta-data">Smart India Hackathon (SIH)</span>
+                </div>
+                <div class="award-meta-item">
+                  <span class="meta-label">Organized By</span>
+                  <span class="meta-data">Central Government of India</span>
+                </div>
+                <div class="award-meta-item">
+                  <span class="meta-label">Recognition Type</span>
+                  <span class="meta-data">Certificate of Participation</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 7. LANGUAGES ==================== -->
+    <section class="section languages-section">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <div class="section-tag">
+            <span class="tag-bracket">[</span> SECTION 06 <span class="tag-bracket">]</span>
+          </div>
+          <h2 class="section-title">Languages</h2>
+          <div class="section-divider"></div>
+          <p class="section-intro">
+            Multilingual communication capabilities supporting collaborative teamwork and technical discussions.
+          </p>
+        </div>
+
+        <div class="languages-grid">
+          
+          <div class="lang-card reveal-fade">
+            <div class="lang-badge">EN</div>
+            <div class="lang-info">
+              <h3 class="lang-name">English</h3>
+              <p class="lang-desc">Professional and technical communication, engineering documentation, and coursework.</p>
+            </div>
+            <div class="lang-indicator">
+              <span class="lang-dot active"></span>
+              <span class="lang-label">Communicative</span>
+            </div>
+          </div>
+
+          <div class="lang-card reveal-fade">
+            <div class="lang-badge">HI</div>
+            <div class="lang-info">
+              <h3 class="lang-name">Hindi</h3>
+              <p class="lang-desc">National communication and conversational interpersonal interaction.</p>
+            </div>
+            <div class="lang-indicator">
+              <span class="lang-dot active"></span>
+              <span class="lang-label">Communicative</span>
+            </div>
+          </div>
+
+          <div class="lang-card reveal-fade">
+            <div class="lang-badge">TE</div>
+            <div class="lang-info">
+              <h3 class="lang-name">Telugu</h3>
+              <p class="lang-desc">Native regional communication and fluent conversational collaboration.</p>
+            </div>
+            <div class="lang-indicator">
+              <span class="lang-dot active"></span>
+              <span class="lang-label">Communicative</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 8. CAREER DIRECTION ==================== -->
+    <section class="section career-direction-section">
+      <div class="container">
+        
+        <div class="career-direction-card reveal-fade">
+          <div class="circuit-wire-top" aria-hidden="true"></div>
+          
+          <div class="direction-badge">
+            <span class="blink-symbol">&bull;</span>
+            <span>STRATEGIC ROADMAP</span>
+          </div>
+
+          <h2 class="direction-title">My Career Direction</h2>
+
+          <div class="direction-focus-banner">
+            <span class="focus-domain">VLSI</span>
+            <span class="focus-dot">&bull;</span>
+            <span class="focus-domain">Semiconductor Technology</span>
+            <span class="focus-dot">&bull;</span>
+            <span class="focus-domain">Embedded Systems</span>
+          </div>
+
+          <div class="direction-narrative">
+            <p>
+              My primary aspiration as an Electronics and Communication Engineering student is to build a high-impact engineering career centered around the semiconductor industry. My current goal is to build stronger programming and electronics skills and gain practical experience through internships.
+            </p>
+            <p>
+              I am dedicated to expanding my foundations in discrete electronic theory, digital logic fundamentals, and structured programming in C and Python &mdash; paving the way for future specialization in VLSI design, semiconductor manufacturing processes, and embedded systems development.
+            </p>
+          </div>
+
+          <div class="direction-goals-row">
+            <div class="goal-pill">
+              <span class="goal-num">01</span>
+              <span>Strengthen C &amp; Python Foundations</span>
+            </div>
+            <div class="goal-arrow">&rarr;</div>
+            <div class="goal-pill">
+              <span class="goal-num">02</span>
+              <span>Secure Hands-on Internship Experience</span>
+            </div>
+            <div class="goal-arrow">&rarr;</div>
+            <div class="goal-pill">
+              <span class="goal-num">03</span>
+              <span>Advance Into VLSI &amp; Semiconductor Domains</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 9. CONTACT SECTION ==================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header reveal-fade">
+          <div class="section-tag">
+            <span class="tag-bracket">[</span> SECTION 07 <span class="tag-bracket">]</span>
+          </div>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+          <p class="section-intro">
+            Interested in connecting regarding internships, semiconductor initiatives, or engineering discussions? Reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Direct Contact Information Cards -->
+          <div class="contact-info-col reveal-fade">
+            
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="22" height="22" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">EMAIL ADDRESS</span>
+                <a href="mailto:tbabarishik@gmail.com" class="contact-value" id="emailVal">tbabarishik@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" title="Copy email address" aria-label="Copy email address">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="22" height="22" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">PHONE NUMBER</span>
+                <a href="tel:+919391529386" class="contact-value" id="phoneVal">9391529386</a>
+              </div>
+              <button class="copy-btn" id="copyPhoneBtn" title="Copy phone number" aria-label="Copy phone number">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="16" height="16" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="22" height="22" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">LOCATION</span>
+                <span class="contact-value static-value">Khammam, Telangana, India</span>
+              </div>
+            </div>
+
+            <div class="contact-card linkedin-card">
+              <div class="contact-card-icon linkedin-icon-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-label">PROFESSIONAL NETWORK</span>
+                <a href="https://in.linkedin.com/in/babarishik-thallada-637682370" target="_blank" rel="noopener noreferrer" class="contact-value linkedin-link">
+                  linkedin.com/in/babarishik-thallada-637682370 &nearr;
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Functional Contact Form (UI-Ready) -->
+          <div class="contact-form-col reveal-fade">
+            <div class="form-wrapper">
+              <div class="form-header">
+                <h3 class="form-title">Send a Message</h3>
+                <span class="form-note">Direct communication via your mail client</span>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Full Name</label>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Recruiter Name / Engineering Lead" required autocomplete="name">
+                  <span class="error-msg" id="nameError">Please enter a name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Your Email</label>
+                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. recruiter@company.com" required autocomplete="email">
+                  <span class="error-msg" id="emailError">Please enter a valid email address</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderSubject" class="form-label">Subject</label>
+                  <input type="text" id="senderSubject" name="subject" class="form-input" placeholder="e.g. Internship Opportunity / Inquiry" value="Internship / Engineering Opportunity - Thallada Baba Rishik">
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label">Message</label>
+                  <textarea id="senderMessage" name="message" rows="5" class="form-textarea" placeholder="Write your message or inquiry here..." required></textarea>
+                  <span class="error-msg" id="messageError">Please enter your message</span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                    <span>Send Message</span>
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                      <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                    </svg>
+                  </button>
+                  <span class="ui-ready-badge">&#9432; Opens draft in your default email client</span>
+                </div>
+              </form>
+
+              <!-- Feedback / Notification banner -->
+              <div id="formFeedback" class="form-feedback hidden" role="alert"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 10. FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="footer-chip">&#9670;</span>
+            <span class="footer-name">Thallada Baba Rishik</span>
+          </div>
+          <p class="footer-bio">
+            Electronics and Communication Engineering Student &bull; Aspiring VLSI Engineer &bull; Khammam, India
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <span class="footer-links-heading">Quick Navigation</span>
+          <div class="footer-nav">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-connect">
+          <span class="footer-links-heading">Professional Connect</span>
+          <a href="https://in.linkedin.com/in/babarishik-thallada-637682370" target="_blank" rel="noopener noreferrer" class="footer-linkedin-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+            </svg>
+            <span>LinkedIn Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2026 Thallada Baba Rishik. All rights reserved.</p>
+        <p class="footer-tech-tag">ECE &bull; VLSI &bull; Semiconductor &bull; Embedded Systems</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification element for copy actions -->
+  <div id="toastNotification" class="toast-notification" aria-live="polite"></div>
+
+  <!-- Back to top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="20" height="20" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
